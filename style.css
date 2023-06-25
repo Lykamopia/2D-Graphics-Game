@@ -15,7 +15,7 @@
 .player{
     position: absolute;
     height: 250px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .score{
@@ -32,13 +32,12 @@
     background-image: url(Images/flame.gif);
     background-size: cover;
     position: absolute;
-    margin-top: 250px;
+    bottom: 0;
 }
 
 .gameOver{
     width: 100vw;
     height: 100vh;  
-    position: absolute;
     color: aliceblue;
     background-color:black;
     display: flex;
@@ -54,16 +53,16 @@
 
 .myVideo {
     min-width: 25%;
-    min-height: 25%
+    min-height: 15%;
 }
 
 .btn{
     width: 400px;
     height: 40px;
-    color: white;
-    background-color:red;
+    color: rgb(234, 234, 234);
+    background-color:rgb(153, 0, 0);
     font-size: 24px;
-    font-family: arial;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     border-style: none;
     border-radius: 10px;
