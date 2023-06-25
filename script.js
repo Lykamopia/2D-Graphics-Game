@@ -27,8 +27,8 @@ var BLOCK_MIN_MARGIN_LEFT = 400;
 var BLOCK_MAX_MARGIN_LEFT = 1000;
 var BLOCK_MOVE_STEP = 20;
 var JUMP_MOVE_STEP = 20;
-var PLAYER_START_MARGIN_TOP = 320;
-var PLAYER_JUMP_MARGIN_TOP = 290;
+var PLAYER_START_MARGIN_TOP = 200;
+var PLAYER_JUMP_MARGIN_TOP = 170;
 var GAME_OVER_IMAGE_NUMBER = 17;
 
 // Event listener for key presses
@@ -73,7 +73,7 @@ function run() {
   if (runImageNumber > MAX_RUN_IMAGES) {
     runImageNumber = 1;
   }
-  player.src = "Run (" + runImageNumber + ").png";
+  player.src = "/Run/Run (" + runImageNumber + ").png";
 }
 
 // Jump animation
@@ -99,7 +99,7 @@ function jump() {
   }
 
   player.style.marginTop = playerMarginTop + "px";
-  player.src = "jump (" + jumpImageNumber + ").png";
+  player.src = "/Jump/jump (" + jumpImageNumber + ").png";
 }
 
 // Move background
@@ -166,7 +166,7 @@ function dead() {
     music.pause();
   }
 
-  player.src = "Dead (" + deadImageNumber + ").png";
+  player.src = "/Dead/Dead (" + deadImageNumber + ").png";
 }
 
 var vid = document.getElementById("myVideo");

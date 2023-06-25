@@ -1,7 +1,8 @@
 .background{
     width: 100vw;
     height: 100vh;
-    background-image: url(98276125656.png);
+    background-image: url(Images/bg3.jpg);
+    background-position: center;
     background-repeat: repeat-x;
     overflow-x: hidden;
     position: absolute;
@@ -14,32 +15,27 @@
 .player{
     position: absolute;
     height: 250px;
-    margin-top: 320px;
-    
-
+    margin-top: 200px;
 }
 
-
 .score{
-    font-size: 90px;
+    font-size: 6rem;
+    color: rgb(71, 71, 71);
     font-family: "Arial";
     font-weight: bold;
-    position: absolute;
-    margin-left: 30px;
+    text-align: center;
 }
 
 .block{
     width: 75px;
     height: 105px;
-    background-image: url(flame.gif);
+    background-image: url(Images/flame.gif);
     background-size: cover;
     position: absolute;
-    margin-top: 450px;
+    margin-top: 250px;
 }
 
-
 .gameOver{
-
     width: 100vw;
     height: 100vh;  
     position: absolute;
@@ -52,17 +48,13 @@
     font-size: 90px;
     font-family: arial;
     font-weight: bold;
-
     opacity: 0.6;
     visibility: hidden;
 }
 
-
 .myVideo {
-
     min-width: 25%;
     min-height: 25%
-    
 }
 
 .btn{
@@ -76,5 +68,4 @@
     border-style: none;
     border-radius: 10px;
     cursor: pointer;
-    
 }
