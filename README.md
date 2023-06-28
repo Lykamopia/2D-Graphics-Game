@@ -14,6 +14,9 @@ To run the game, you need a web browser that supports JavaScript.
 
 1. Clone this repository to your local machine using `git clone`.
 2. Navigate to the project directory.
+   `
+   cd 2D-Graphics-Game
+   `
 
 ## Running the Game
 
