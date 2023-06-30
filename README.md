@@ -14,6 +14,9 @@ To run the game, you need a web browser that supports JavaScript.
 
 1. Clone this repository to your local machine using `git clone`.
 2. Navigate to the project directory.
+   `
+   cd 2D-Graphics-Game
+   `
 
 ## Running the Game
 
@@ -21,7 +24,8 @@ To run the game, you need a web browser that supports JavaScript.
 2. Press the Enter key to start the game.
 3. Press the Spacebar key to make the player character jump.
 4. Avoid colliding with the fire.
-5. The game ends when the player collides with the fire.
+5. The fire is randomly ordered.
+6. The game ends when the player collides with the fire.
 
 ## Game Controls
 
