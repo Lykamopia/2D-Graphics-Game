@@ -31,6 +31,73 @@ var PLAYER_START_MARGIN_TOP = 150;
 var PLAYER_JUMP_MARGIN_TOP = 120;
 var GAME_OVER_IMAGE_NUMBER = 17;
 
+// Elements
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+// Set the canvas dimensions
+canvas.width = 800; 
+canvas.height = 400; 
+
+
+function draw() {
+  // Clear the canvas
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Draw multiple small Christmas stars
+  ctx.fillStyle = "#E7E6DD";
+
+  // Draw two large stars
+  drawStar(150, 100);
+  drawStar(300, 200);
+  
+
+  // Draw 10 small stars randomly positioned
+
+  for (let i = 0; i < 10; i++) {
+    const x = Math.random() * canvas.width;
+    const y = Math.random() * canvas.height;
+    drawSmallStar(x, y);
+  }
+}
+
+// Draw a large Christmas star
+function drawStar(x, y) {
+  ctx.beginPath();
+  ctx.moveTo(x, y - 30);
+  ctx.lineTo(x + 10, y - 5);
+  ctx.lineTo(x + 35, y - 5);
+  ctx.lineTo(x + 15, y + 10);
+  ctx.lineTo(x + 25, y + 35);
+  ctx.lineTo(x, y + 20);
+  ctx.lineTo(x - 25, y + 35);
+  ctx.lineTo(x - 15, y + 10);
+  ctx.lineTo(x - 35, y - 5);
+  ctx.lineTo(x - 10, y - 5);
+  ctx.closePath();
+  ctx.fill();
+}
+
+// Draw a small Christmas star
+function drawSmallStar(x, y) {
+  ctx.beginPath();
+  ctx.moveTo(x, y - 15);
+  ctx.lineTo(x + 3, y - 2);
+  ctx.lineTo(x + 10, y - 2);
+  ctx.lineTo(x + 4, y + 4);
+  ctx.lineTo(x + 7, y + 10);
+  ctx.lineTo(x, y + 7);
+  ctx.lineTo(x - 7, y + 10);
+  ctx.lineTo(x - 4, y + 4);
+  ctx.lineTo(x - 10, y - 2);
+  ctx.lineTo(x - 3, y - 2);
+  ctx.closePath();
+  ctx.fill();
+}
+
+// Call the draw function to initially render the canvas
+draw();
+
 // Event listener for key presses
 function keyCheck(event) {
   if (event.which == 13) {
